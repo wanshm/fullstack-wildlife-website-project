@@ -1,0 +1,241 @@
+body{
+	margin:0px;
+	background-color: #D0F0C0;
+}
+
+
+nav{
+	display: flex;
+	background-color: #50C878;
+	color: white; 
+	justify-content: space-between;
+	align-items:center;
+	font-size: 32px;
+	font-family: "Reem Kufi Ink", sans-serif;
+	font-weight: 400;
+	padding: 30px 0px;
+	margin: 0px auto;
+	max-width: 1500px;
+}
+
+footer {
+	padding: 15px; 
+	color:white;
+	max-width: 1500px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+  	font-family: "REM", sans-serif;
+	font-size: 16px;
+}
+
+#navbg, #footerbg{
+	background-color: #50C878;
+}
+
+nav div {
+	align-items:center;
+	display: flex;
+	margin: 0px;	
+}
+nav a {
+	margin: 0px 30px;
+}
+
+nav #search {
+	border: none;
+	border-radius: 6px;
+	color: #7F7F7F;
+	font-size: 16px;
+	padding: 8px;
+}
+
+nav button {
+	display: none;
+}
+
+nav h1 {
+	font-size: 32px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+
+nav #line {
+	border: solid 2px white;
+	min-height: 42px;
+
+}
+
+main {
+	background-color: #ffffff;
+	max-width: 1400px;
+	margin: 0px auto;
+	padding: 30px 50px;
+}
+
+h1{
+	font-family: "Reem Kufi Ink", sans-serif;
+	font-size: 32px;
+}
+
+p {
+	font-family: "Rethink Sans", sans-serif;
+	font-size:20px;
+	font-weight: 400;
+}
+
+.bigButton {	
+	color: #ffffff;
+	font-family: "Reem Kufi Ink", sans-serif;
+	font-size: 128px;
+	border: solid 10px;
+	border-radius: 24px;
+	padding: 50px 0px 25px 70px;
+	max-width: 1200px;
+	margin: 50px auto;
+
+}
+
+#plantsButton{
+	border-color: #50C878;
+	background-image: url("./rainforest.jpg");
+}
+
+.underline {
+	color: white;
+	border: solid 10px white;
+	display: none;
+	translate: 0px -20px;
+}
+
+#plantsButton .underline{
+	max-width: 358px;
+}
+
+
+#animalsButton .underline{
+	max-width: 464px;
+}
+
+@keyframes underline-appear {
+
+	0%{
+		width: 0%;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
+
+#plantsButton:hover .underline, #animalsButton:hover .underline{
+		display: block;
+		animation:  0.5s underline-appear;
+}
+
+#plantsButton:hover, #animalsButton:hover{
+	padding-bottom: 5px;
+}
+
+#animalsButton{
+	border-color: #000000;
+	background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/03/Free-tiger-animal-wallpaper-HD.jpg");
+  	background-position: 1500px 900px;
+}
+
+#container {
+	display: grid;
+  	grid-template-columns: auto auto;
+	grid-gap: 34px;
+	max-width: 1100px;
+	margin: auto;
+}
+
+.card{
+	display:flex;
+
+	border: solid 1px black;
+	border-radius: 20px;
+	box-shadow: 10px 10px rgba(0,0,0,0.2);
+	padding:18px;
+	transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+	
+}
+
+.card:hover {
+  transform: perspective(1000px) rotateX(0deg) translateY(-5px);
+  box-shadow:
+    0 8px 25px rgba(0,0,0,0.1),
+    0 15px 15px -5px rgba(0,0,0,0.08),
+    0 1px 3px rgba(0,0,0,0.1);
+  border-color: #e9c6ff;
+}
+
+
+.green {
+	background-color: #F0FFAD ;
+}
+
+.blue {
+	background-color: #95B9C7;
+}
+
+.card img {
+	border: solid 1px black;
+	max-height: 175px;
+	max-width: 185px;
+	margin-right: 25px;
+}
+
+.card h8, .ddi h8 {
+	font-size: 20px;
+	font-family: "Reem Kufi Ink", sans-serif;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
+
+#dds img{
+	max-height: 100px;
+	margin: 0px 20px;
+
+}
+
+.ddi {
+	display: flex;
+	font-family: "Reem Kufi Ink", sans-serif;
+
+}
+
+#dds button {
+	margin: 0px auto;
+	background-color:#FFFFFF;
+	border:none;
+}
+
+.ddh {
+	display:flex;
+	align-items:center;
+	justify-content: space-between;
+}
+
+.ddh img {
+	height: 30px;
+}
